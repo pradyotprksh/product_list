@@ -15,6 +15,7 @@ class TranslationsFile extends Translations {
         'en': {
           'noInternet': 'You are not connected to the internet. Please check.',
           'okay': 'Okay',
+          'somethingWentWrong': 'Oops! Something went wrong.',
         },
       };
 }

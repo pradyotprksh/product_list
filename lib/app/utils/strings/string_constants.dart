@@ -6,4 +6,5 @@ abstract class StringConstants {
   static String appName = 'Huvi';
   static String noInternet = 'noInternet'.tr;
   static String okay = 'okay'.tr;
+  static String somethingWentWrong = 'somethingWentWrong'.tr;
 }

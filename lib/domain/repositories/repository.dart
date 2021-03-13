@@ -14,4 +14,13 @@ class Repository extends DomainRepository {
 
   @override
   String getStringValue(String key) => _deviceRepository.getStringValue(key);
+
+  @override
+  Future<CategoryList> getCatgories() {
+    try {
+      return _deviceRepository.getCatgories();
+    } catch (_) {
+      return _dataRepository.getCatgories();
+    }
+  }
 }

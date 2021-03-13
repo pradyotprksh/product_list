@@ -2,5 +2,6 @@
 
 abstract class DataConstants {
   static const String defaultLang = 'en';
-  static const String baseUrl = 'https://api.unsplash.com/';
+  static const String baseUrl =
+      'https://interface.huviapp.co/api/v1/index.php/masterapi/';
 }

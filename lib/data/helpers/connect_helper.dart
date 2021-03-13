@@ -14,4 +14,10 @@ class ConnectHelper extends GetConnect {
       ..maxRedirects = 2;
     super.onInit();
   }
+
+  // Get list of categories
+  Future<Response<String>> getCatgories() => get(
+        'get_categories',
+        contentType: 'application/json',
+      );
 }

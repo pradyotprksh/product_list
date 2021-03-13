@@ -37,4 +37,9 @@ class DeviceRepository extends DomainRepository {
     }
     return value;
   }
+
+  @override
+  Future<CategoryList> getCatgories() {
+    throw UnimplementedError();
+  }
 }

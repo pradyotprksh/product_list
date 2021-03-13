@@ -8,13 +8,8 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) => GetBuilder<HomeController>(
         builder: (_controller) => Scaffold(
-          backgroundColor: Get.theme.primaryColor,
-          body: Center(
-            child: Text(
-              StringConstants.appName,
-              style: Styles.bold30,
-            ),
-          ),
+          backgroundColor: Get.theme.backgroundColor,
+          body: Container(),
         ),
       );
 }
