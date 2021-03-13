@@ -12,6 +12,7 @@ class ProductsController extends GetxController {
 
   /// Get category length
   int getTabLength() {
+    _productsPresenter.toString();
     categoryList = Get.find<HomeController>().categoryList;
     return categoryList?.data?.length ?? 0;
   }
