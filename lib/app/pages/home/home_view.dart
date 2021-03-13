@@ -2,12 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:product_list/app/app.dart';
 import 'package:get/get.dart';
 
-/// The splash view which will show the splash screen and perform the basic
+/// The home view which will show the home screen and perform the basic
 /// ui work.
-class SplashView extends StatelessWidget {
+class HomeView extends StatelessWidget {
   @override
-  Widget build(BuildContext context) => GetBuilder<SplashController>(
-        init: Get.find()..goToHome(),
+  Widget build(BuildContext context) => GetBuilder<HomeController>(
         builder: (_controller) => Scaffold(
           backgroundColor: Get.theme.primaryColor,
           body: Center(

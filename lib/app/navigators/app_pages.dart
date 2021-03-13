@@ -24,5 +24,12 @@ class AppPages {
       binding: SplashBinding(),
       transition: Transition.native,
     ),
+    GetPage(
+      name: _Paths.homeScreen,
+      transitionDuration: transitionDuration,
+      page: () => HomeView(),
+      binding: HomeBinding(),
+      transition: Transition.native,
+    ),
   ];
 }

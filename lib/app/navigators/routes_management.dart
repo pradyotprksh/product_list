@@ -9,4 +9,11 @@ abstract class RouteManagement {
       Routes.splashScreen,
     );
   }
+
+  /// Go to the home screen.
+  static void goToHome() {
+    Get.offNamed<void>(
+      Routes.homeScreen,
+    );
+  }
 }
