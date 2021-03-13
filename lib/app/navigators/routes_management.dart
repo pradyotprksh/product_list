@@ -16,4 +16,14 @@ abstract class RouteManagement {
       Routes.homeScreen,
     );
   }
+
+  /// Go to the home screen.
+  static void goToProducts(String categoryId) {
+    Get.toNamed<void>(
+      Routes.products,
+      arguments: <String, dynamic>{
+        'categoryId': categoryId,
+      },
+    );
+  }
 }

@@ -31,5 +31,12 @@ class AppPages {
       binding: HomeBinding(),
       transition: Transition.native,
     ),
+    GetPage(
+      name: _Paths.products,
+      transitionDuration: transitionDuration,
+      page: () => ProductsView(),
+      binding: ProductsBinding(),
+      transition: Transition.native,
+    ),
   ];
 }
