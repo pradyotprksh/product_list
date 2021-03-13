@@ -18,6 +18,10 @@ class ConnectHelper extends GetConnect {
   // Get list of categories
   Future<Response<String>> getCatgories() => get(
         'get_categories',
-        contentType: 'application/json',
+      );
+
+  // Get list of categories
+  Future<Response<String>> getProducts() => get(
+        'get_products',
       );
 }

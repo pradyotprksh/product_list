@@ -22,14 +22,8 @@ class ProductsView extends StatelessWidget {
   AppBar _getAppBar(CategoryList categoryList) => AppBar(
         backgroundColor: Get.theme.backgroundColor,
         elevation: Dimens.zero,
-        leading: IconButton(
-          onPressed: () {},
-          icon: Icon(
-            Icons.menu,
-            color: Styles.iconThemeData.color,
-          ),
-        ),
         centerTitle: true,
+        iconTheme: Styles.iconThemeData,
         title: Text(
           StringConstants.prodcuts,
           style: Styles.oppositeBoldl18,
