@@ -60,6 +60,11 @@ class Datum {
   ExpDelText expDelText;
   List<SubCategory> subCategories;
 
+  @override
+  bool operator ==(Object other) {
+    return other != null && other is Datum && categoryId == other.categoryId;
+  }
+
   factory Datum.fromMap(Map<String, dynamic> json) => Datum(
         categoryId: json["category_id"],
         categoryName: json["category_name"],

@@ -13,4 +13,5 @@ abstract class StringConstants {
   static String profile = 'profile'.tr;
   static String addressExample = 'addressExample'.tr;
   static String category = 'category'.tr;
+  static String prodcuts = 'prodcuts'.tr;
 }

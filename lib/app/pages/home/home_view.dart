@@ -117,7 +117,7 @@ class HomeView extends StatelessWidget {
             Dimens.boxWidth10,
             Text(
               StringConstants.addressExample.toUpperCase(),
-              style: Styles.oppositeBoldl14,
+              style: Styles.oppositeBoldl18,
             )
           ],
         ),

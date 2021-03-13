@@ -22,6 +22,7 @@ class TranslationsFile extends Translations {
           'profile': 'Profile',
           'addressExample': 'London se11 4hj, uk',
           'category': 'Category',
+          'prodcuts': 'Prodcuts',
         },
       };
 }

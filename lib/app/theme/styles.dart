@@ -120,6 +120,12 @@ abstract class Styles {
     color: ColorsValue.themeColor(),
   );
 
+  static TextStyle primaryBold20 = GoogleFonts.muli(
+    fontSize: Dimens.twenty,
+    fontWeight: FontWeight.bold,
+    color: ColorsValue.primaryColor,
+  );
+
   static TextStyle whiteBold30 = GoogleFonts.muli(
     fontSize: Dimens.ten + Dimens.twenty,
     fontWeight: FontWeight.bold,
