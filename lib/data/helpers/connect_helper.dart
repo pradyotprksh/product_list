@@ -20,8 +20,14 @@ class ConnectHelper extends GetConnect {
         'get_categories',
       );
 
-  // Get list of categories
-  Future<Response<String>> getProducts() => get(
-        'get_products',
-      );
+  // Get list of products
+  Future<Response<String>> getProducts(String categoryId) {
+    var body = <String, String>{};
+    body['key'] = 'category';
+    body['value'] = categoryId;
+    return post(
+      'get_products',
+      FormData(body),
+    );
+  }
 }

@@ -8,7 +8,9 @@ class ProductsBinding extends Bindings {
     Get.lazyPut<ProductsController>(
       () => ProductsController(
         Get.put(
-          ProductsPresenter(),
+          ProductsPresenter(
+            Get.find(),
+          ),
         ),
       ),
     );

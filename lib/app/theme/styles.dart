@@ -96,6 +96,12 @@ abstract class Styles {
     color: ColorsValue.themeOppositeColor(),
   );
 
+  static TextStyle oppositeBoldl12 = GoogleFonts.muli(
+    fontSize: Dimens.ten + Dimens.two,
+    fontWeight: FontWeight.bold,
+    color: ColorsValue.themeOppositeColor(),
+  );
+
   static TextStyle subtitlel14 = GoogleFonts.muli(
     fontSize: Dimens.ten + Dimens.four,
     fontWeight: FontWeight.bold,

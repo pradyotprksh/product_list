@@ -9,4 +9,7 @@ abstract class DomainRepository {
 
   // Get list of categories
   Future<CategoryList> getCatgories();
+
+  /// Get product list for the [categoryId].
+  Future<Products> getProductList({String categoryId});
 }

@@ -9,4 +9,8 @@ class CategoryUsecases {
 
   /// Get category list
   Future<CategoryList> getCategoryList() => _repository.getCatgories();
+
+  /// Get prodcut list
+  Future<Products> getProductList(String categoryId) =>
+      _repository.getProductList(categoryId: categoryId);
 }

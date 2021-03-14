@@ -35,4 +35,25 @@ class DataRepository extends DomainRepository {
       );
     }
   }
+
+  @override
+  Future<Products> getProductList({String categoryId}) async {
+    if (await Utility.isNetworkAvailable()) {
+      var response = await _connectHelper.getProducts(categoryId);
+      if (response.isOk) {
+        var data = response.bodyString;
+        return productsFromMap(data);
+      } else {
+        throw NetworkException(
+          message: response.statusText,
+          errorCode: response.statusCode,
+        );
+      }
+    } else {
+      throw NetworkException(
+        message: StringConstants.noInternet,
+        errorCode: 500,
+      );
+    }
+  }
 }

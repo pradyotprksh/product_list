@@ -42,4 +42,9 @@ class DeviceRepository extends DomainRepository {
   Future<CategoryList> getCatgories() {
     throw UnimplementedError();
   }
+
+  @override
+  Future<Products> getProductList({String categoryId}) {
+    throw UnimplementedError();
+  }
 }

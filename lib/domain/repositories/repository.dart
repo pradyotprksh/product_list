@@ -23,4 +23,13 @@ class Repository extends DomainRepository {
       return _dataRepository.getCatgories();
     }
   }
+
+  @override
+  Future<Products> getProductList({String categoryId}) {
+    try {
+      return _deviceRepository.getProductList(categoryId: categoryId);
+    } catch (_) {
+      return _dataRepository.getProductList(categoryId: categoryId);
+    }
+  }
 }

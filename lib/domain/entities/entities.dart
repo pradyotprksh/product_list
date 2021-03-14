@@ -2,3 +2,4 @@
 
 export 'category_list.dart';
 export 'enums.dart';
+export 'products.dart';
