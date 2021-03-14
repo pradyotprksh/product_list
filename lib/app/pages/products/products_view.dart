@@ -105,7 +105,7 @@ class ProductsView extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Padding(
-                      padding: Dimens.edgeInsets5_5_5_0,
+                      padding: Dimens.edgeInsets5_0_5_0,
                       child: Text(
                         product.title,
                         style: Styles.oppositeBoldl12,
@@ -114,7 +114,7 @@ class ProductsView extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: Dimens.edgeInsets5_5_5_0,
+                      padding: Dimens.edgeInsets5_0_5_0,
                       child: Text(
                         product.productVariant.toString(),
                         style: Styles.subtitlel10,
@@ -126,7 +126,7 @@ class ProductsView extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Padding(
-                          padding: Dimens.edgeInsets5_5_5_5,
+                          padding: Dimens.edgeInsets5_0_5_0,
                           child: Text(
                             '\$${product.purchasePrice.toString()}',
                             style: Styles.oppositeBoldl18,
